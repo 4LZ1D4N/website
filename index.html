@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\500, initial-scale=1.0">
+    <title>UMKM Mie Setan Japos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <h2>Mie Setan Japos</h2>
+        <hr class="sidebar-hr">
+        <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#address">Alamat</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div id="about" class="section">
+            <img src="img/logo.jpg" alt="" width="90px" height="90px">
+            <h2>Tentang Kami</h2>
+            <p>Selamat datang di UMKM Mie Setan Japos! Kami adalah usaha kecil yang menyajikan mie pedas dengan cita rasa khas yang menggugah selera. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik bagi para pecinta mie pedas.</p>
+        <div id="products" class="section">
+            <h2>Produk Kami</h2>
+            <div class="product">
+                <img src="img/setan.jpg" alt="Mie Setan" width="100%" height="500">
+                <br>
+                <b>Mie Setan Level 1-5</b>
+                <b>Rp 12.000</b>
+            </div>
+            <br>
+            <br>
+            <div class="product">
+                <img src="img/iblis.jpg" alt="Mie Iblis" width="100%" height="500">
+                <br>
+                <b>Mie Iblis (Mie Goreng Pedas)</b>
+                <b>Rp 12.000</b>
+            </div>
+            <br>
+            <br>
+            <div class="product">
+                <img src="img/angel.jpg" alt="Mie Angel" width="100%" height="500">
+                <b>Mie Angel</b>
+                <b>Rp 10.000</b>
+            </div>
+            <br>
+            <br>
+            <div class="product">
+                <img src="img/teh.jpg" alt="Es Teh Solo" width="100%" height="500">
+                <br>
+                <b>Es Teh Solo</b>
+                <b>Rp 5.000</b>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Kontak Kami</h2>
+            <p>Hubungi kami untuk pemesanan atau informasi lebih lanjut:</p>
+            <p>
+                <a href="mailto:umkmmiesetanjapos@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </p>
+            <p>
+                <a href="https://www.instagram.com/miesetanjapos?igsh=djN0cm9tNHZiaGlm" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </p>
+            <p>
+                <a href="http://wa.me/6285162821455/" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </p>
+        </div>
+    </div>
+
+     <div id="address" class="section">
+        <h2>Alamat Kami</h2>
+        <p>MIE SETAN JAPOS, Jl. Pd. Jati Raya, Jl. Sunan Gn. Jati, RT.003/RW.015, Paninggilan, Ciledug, Tangerang, 15153</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.222011074499!2d106.71297162213945!3d-6.249823375982929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb588e5914f3%3A0x70001f39296b8cf0!2sMIE%20SETAN%20JAPOS!5e0!3m2!1sid!2sid!4v1740910384057!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+   </div>
+
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.querySelector('.sidebar');
+            const toggleButton = document.createElement('button');
+            toggleButton.classList.add('sidebar-toggle');
+            toggleButton.innerHTML = '<i class="fas fa-bars"></i>';
+            document.body.appendChild(toggleButton);
+
+            toggleButton.addEventListener('click', () => {
+                sidebar.classList.toggle('minimized');
+            });
+        });
+    </script>
+
+</body>
+</html>
